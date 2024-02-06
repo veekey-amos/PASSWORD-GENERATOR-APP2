@@ -4,6 +4,7 @@ from random import randint
 root = Tk()
 root.config(bg='midnight blue')
 root.geometry("600x400")
+root.title('Password Generator")
 
 
 welcome_label = Label(root, text="Welcome! Click the Generate button to generate your unique password.", font=("Arial bold", 12, "bold"), bg="black", fg="white")
