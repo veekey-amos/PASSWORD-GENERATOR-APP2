@@ -2,6 +2,7 @@ from tkinter import *
 from random import randint
 
 root = Tk()
+root.config(bg='midnight blue')
 root.geometry("600x400")
 
 
