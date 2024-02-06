@@ -17,4 +17,12 @@ def new_rand() :
 
     pw_entry.insert(0, ny_password)
 
+
+lf = LabelFrame(root, text="How Many Characters?")
+lf.pack(pady=20)
+
+ny_entry = Entry(lf, font=("Arial bold", 44))
+ny_entry.pack(pady=20)
+
+
 root.mainloop()
