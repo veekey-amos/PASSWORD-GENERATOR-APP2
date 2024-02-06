@@ -25,7 +25,7 @@ lf.pack(pady=20)
 ny_entry = Entry(lf, font=("Arial bold", 44))
 ny_entry.pack(pady=20)
 
-pw_entry = Entry(root, text='', font=('Arial bold', 24), bd=0, bg="midnight blue")
+pw_entry = Entry(root, text='', font=('Arial bold', 24), bd="white", bg="midnight blue")
 pw_entry.pack(pady=20)
 
 ny_frame = Frame(root)
