@@ -2,7 +2,7 @@ from tkinter import *
 from random import randint
 
 root = Tk()
-root.config(bg='midnight blue')
+root.configure(bg='midnight blue')
 root.geometry("600x400")
 root.title('Password Generator")
 
@@ -19,20 +19,19 @@ def new_rand() :
 
     pw_entry.insert(0, ny_password)
 
-
-lf = LabelFrame(root, text="How Many Characters?")
+lf = LabelFrame(root, text="How Many Characters?", bg="midnightblue", padx=10, pady=10, fg="white")
 lf.pack(pady=20)
 
-ny_entry = Entry(lf, font=("Arial bold", 44))
+ny_entry = Entry(lf, font=("Arial bold", 44), bg="white", fg="midnightblue")
 ny_entry.pack(pady=20)
 
-pw_entry = Entry(root, text='', font=('Arial bold', 24), bd="white", bg="midnight blue")
+pw_entry = Entry(root, text='', font=('Arial bold', 24), bd=0, bg="white", fg="midnight blue")
 pw_entry.pack(pady=20)
 
-ny_frame = Frame(root)
+ny_frame = Frame(roo, bg="midnightblue")
 ny_frame.pack(pady=20)
 
-ny_button = Button(ny_frame, text="Generate unique password", command=new_rand)
+ny_button = Button(ny_frame, text="Generate unique password", command=new_rand, )
 ny_button.grid(row=0, column=0, padx=10)
 
 root.mainloop()
