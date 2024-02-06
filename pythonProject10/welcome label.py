@@ -30,4 +30,7 @@ pw_entry.pack(pady=20)
 ny_frame = Frame(root)
 ny_frame.pack(pady=20)
 
+ny_button = Button(ny_frame, text="Generate unique password", command=new_rand)
+ny_button.grid(row=0, column=0, padx=10)
+
 root.mainloop()
