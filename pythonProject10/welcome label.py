@@ -4,7 +4,7 @@ from random import randint
 root = Tk()
 root.configure(bg='midnight blue')
 root.geometry("600x400")
-root.title('Password Generator")
+root.title("Password Generator")
 
 
 welcome_label = Label(root, text="Welcome! Click the Generate button to generate your unique password.", font=("Arial bold", 12, "bold"), bg="black", fg="white")
@@ -28,7 +28,7 @@ ny_entry.pack(pady=20)
 pw_entry = Entry(root, text='', font=('Arial bold', 24), bd=0, bg="white", fg="midnight blue")
 pw_entry.pack(pady=20)
 
-ny_frame = Frame(roo, bg="midnightblue")
+ny_frame = Frame(root, bg="midnightblue")
 ny_frame.pack(pady=20)
 
 ny_button = Button(ny_frame, text="Generate unique password", command=new_rand, bg="black", fg= "white" )
